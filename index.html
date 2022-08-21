@@ -10,10 +10,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Modify Your Cart 🛒</h1>
-    <div class="w-3/4 mx-auto">
+    <h1 class="text-5xl font-semibold text-center">Modify Your Cart 🛒</h1>
+    <div class="w-3/4 max-w-2xl mx-auto">
       <div
         class="flex relative justify-left items-center shadow-md gap-10 p-6 rounded-md"
       >
@@ -27,25 +28,101 @@
           <h3 class="text-2xl font-semibold">Iphone 13</h3>
           <h5>Lorem, ipsum dolor sit amet</h5>
           <h2 class="text-xl font-bold text-yellow-500">
-            $<span>1100</span
+            $<span class="price">1100</span
             ><span class="text-xs leading-tight text-gray-700">
-              x<span>1</span>
+              x<span class="pcs">1</span>
             </span>
           </h2>
         </div>
         <div
-          id="cart-icon"
-          class="ml-auto mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
+          class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
         >
           <i class="fa-solid fa-cart-plus text-2xl"></i>
           <div
-            id="modal"
             style="display: none"
-            class="absolute right-0 bottom-0 w-max shadow-md space-x-4 rounded-full bg-white px-10 py-4 text-xl"
+            class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"
           >
-            <i class="fa-solid fa-plus"></i>
-            <span>25</span>
-            <i class="fa-solid fa-minus"></i>
+            <i
+              class="fa-solid fa-plus hover:text-green-700 hover:scale-125 transition-all"
+            ></i>
+            <span class="quantity">1</span>
+            <i
+              class="fa-solid fa-minus hover:text-red-700 hover:scale-125 transition-all"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex relative justify-left items-center shadow-md gap-10 p-6 rounded-md"
+      >
+        <div class="w-20">
+          <img
+            src="https://w7.pngwing.com/pngs/343/207/png-transparent-iphone-x-iphone-8-plus-iphone-7-apple-iphone-gadget-electronics-mobile-phone.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Iphone 13</h3>
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h2 class="text-xl font-bold text-yellow-500">
+            $<span class="price">1100</span
+            ><span class="text-xs leading-tight text-gray-700">
+              x<span class="pcs">1</span>
+            </span>
+          </h2>
+        </div>
+        <div
+          class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
+        >
+          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <div
+            style="display: none"
+            class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"
+          >
+            <i
+              class="fa-solid fa-plus hover:text-green-700 hover:scale-125 transition-all"
+            ></i>
+            <span class="quantity">1</span>
+            <i
+              class="fa-solid fa-minus hover:text-red-700 hover:scale-125 transition-all"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex relative justify-left items-center shadow-md gap-10 p-6 rounded-md"
+      >
+        <div class="w-20">
+          <img
+            src="https://w7.pngwing.com/pngs/343/207/png-transparent-iphone-x-iphone-8-plus-iphone-7-apple-iphone-gadget-electronics-mobile-phone.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Iphone 13</h3>
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h2 class="text-xl font-bold text-yellow-500">
+            $<span class="price">1100</span
+            ><span class="text-xs leading-tight text-gray-700">
+              x<span class="pcs">1</span>
+            </span>
+          </h2>
+        </div>
+        <div
+          class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
+        >
+          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <div
+            style="display: none"
+            class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"
+          >
+            <i
+              class="fa-solid fa-plus hover:text-green-700 hover:scale-125 transition-all"
+            ></i>
+            <span class="quantity">1</span>
+            <i
+              class="fa-solid fa-minus hover:text-red-700 hover:scale-125 transition-all"
+            ></i>
           </div>
         </div>
       </div>
