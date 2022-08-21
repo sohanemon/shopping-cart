@@ -5,15 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/4a314d7cd5.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      module.exports = {
+        theme: {
+          extend: {
+            fontFamily: {
+              poppins: ["poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <h1 class="text-3xl font-semibold text-center">Modify Your Cart 🛒</h1>
+  <body class="font-[poppins]">
+    <h1 class="text-3xl font-semibold text-center mt-4">Modify Your Cart 🛒</h1>
     <div class="w-3/4 max-w-2xl mx-auto">
       <div
         class="flex relative justify-left items-center shadow-md gap-10 p-6 rounded-md"
@@ -25,8 +42,8 @@
           />
         </div>
         <div>
-          <h3 class="text-2xl font-semibold">Iphone 13</h3>
-          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h3 class="text-base sm:text-2xl font-semibold">Iphone 13</h3>
+          <h5 class="text-xs sm:text-sm">Lorem, ipsum dolor sit amet</h5>
           <h2 class="text-xl font-bold text-yellow-500">
             $<span price="1100" class="price">1100</span
             ><span class="text-xs leading-tight text-gray-700">
@@ -37,7 +54,7 @@
         <div
           class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
         >
-          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <i class="fa-solid fa-cart-plus text-base sm:text-2xl"></i>
           <div
             style="display: none"
             class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"
@@ -62,8 +79,10 @@
           />
         </div>
         <div>
-          <h3 class="text-2xl font-semibold">Iphone Silicon Cover</h3>
-          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h3 class="text-base sm:text-2xl font-semibold">
+            Iphone Silicon Cover
+          </h3>
+          <h5 class="text-xs sm:text-sm">Lorem, ipsum dolor sit amet</h5>
           <h2 class="text-xl font-bold text-yellow-500">
             $<span price="100" class="price">100</span
             ><span class="text-xs leading-tight text-gray-700">
@@ -74,7 +93,7 @@
         <div
           class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
         >
-          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <i class="fa-solid fa-cart-plus text-base sm:text-2xl"></i>
           <div
             style="display: none"
             class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"
@@ -99,8 +118,8 @@
           />
         </div>
         <div>
-          <h3 class="text-2xl font-semibold">Iphone Charger</h3>
-          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h3 class="text-base sm:text-2xl font-semibold">Iphone Charger</h3>
+          <h5 class="text-xs sm:text-sm">Lorem, ipsum dolor sit amet</h5>
           <h2 class="text-xl font-bold text-yellow-500">
             $<span price="200" class="price">200</span
             ><span class="text-xs leading-tight text-gray-700">
@@ -111,7 +130,7 @@
         <div
           class="ml-auto cart-icon mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
         >
-          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <i class="fa-solid fa-cart-plus text-base sm:text-2xl"></i>
           <div
             style="display: none"
             class="modal absolute right-0 bottom-0 w-max shadow-md space-x-4 select-none rounded-full bg-white px-10 py-4 text-xl text-gray-900"

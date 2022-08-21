@@ -11,6 +11,7 @@ for (let cart of carts) {
       e.target.nextElementSibling.style.display = "block";
     e.stopPropagation();
     /* --- note: so that this event may not hit the body's event listener -- */
+    /* ------------------------ event bubbles stops ------------------------ */
   });
 }
 document.body.addEventListener("click", () => {
@@ -26,6 +27,7 @@ document.body.addEventListener("click", () => {
 const modals = $("modal");
 for (let modal of modals) {
   modal.addEventListener("click", (e) => {
+    /* ----------------- working with child from its parent ---------------- */
     let price =
       e.target.parentElement.parentElement.parentElement.querySelector(
         ".price"
@@ -35,6 +37,7 @@ for (let modal of modals) {
 
     let quantity =
       e.target.parentElement.parentElement.querySelector(".quantity");
+    /* --------------------- event delegation performed -------------------- */
     if (!quantity || !price) return;
     let newQuantity;
 
