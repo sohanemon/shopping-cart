@@ -48,6 +48,7 @@ for (let modal of modals) {
     }
     price.innerText = newQuantity * 1100;
     quantity.innerText = pcs.innerText = newQuantity;
+    updateTotal();
     e.stopPropagation();
   });
 }
