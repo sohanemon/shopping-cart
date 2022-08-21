@@ -46,7 +46,7 @@ for (let modal of modals) {
     } else {
       return;
     }
-    price.innerText = newQuantity * 1100;
+    price.innerText = newQuantity * parseFloat(price.getAttribute("price"));
     quantity.innerText = pcs.innerText = newQuantity;
     updateTotal();
     e.stopPropagation();
