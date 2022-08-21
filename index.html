@@ -1,0 +1,55 @@
+<!DOCTYPE html data-theme="cupcake>
+<html lang="en" class="bg-transparent">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Dashboard</title>
+    <script
+      src="https://kit.fontawesome.com/4a314d7cd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h1>Modify Your Cart 🛒</h1>
+    <div class="w-3/4 mx-auto">
+      <div
+        class="flex relative justify-left items-center shadow-md gap-10 p-6 rounded-md"
+      >
+        <div class="w-20">
+          <img
+            src="https://w7.pngwing.com/pngs/343/207/png-transparent-iphone-x-iphone-8-plus-iphone-7-apple-iphone-gadget-electronics-mobile-phone.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold">Iphone 13</h3>
+          <h5>Lorem, ipsum dolor sit amet</h5>
+          <h2 class="text-xl font-bold text-yellow-500">
+            $<span>1100</span
+            ><span class="text-xs leading-tight text-gray-700">
+              x<span>1</span>
+            </span>
+          </h2>
+        </div>
+        <div
+          id="cart-icon"
+          class="ml-auto mr-4 relative cursor-pointer hover:shadow-sm rounded-full p-3"
+        >
+          <i class="fa-solid fa-cart-plus text-2xl"></i>
+          <div
+            id="modal"
+            style="display: none"
+            class="absolute right-0 bottom-0 w-max shadow-md space-x-4 rounded-full bg-white px-10 py-4 text-xl"
+          >
+            <i class="fa-solid fa-plus"></i>
+            <span>25</span>
+            <i class="fa-solid fa-minus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
